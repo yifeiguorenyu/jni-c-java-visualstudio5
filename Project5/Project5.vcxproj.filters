@@ -29,5 +29,8 @@
     <ClCompile Include="c调用java方法获取UUID.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="常量指针和指针常量.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
