@@ -4,5 +4,8 @@ JNIEXPORT void JNICALL Java_ndk1_Simple5_callGetUuid
 	jmethodID	methodId =(*env)->GetStaticMethodID(env, clazz, "getUuid", "()Ljava/lang/String;");
 	jstring j_str=(*env)->CallStaticObjectMethod(env, clazz, methodId);
 	char* str=(*env)->GetStringUTFChars(env, j_str, NULL);
+
+	//»ØÊÕ×Ö·û´®
+	(*env)->ReleaseStringUTFChars(env,j_str,str);
 	printf("str=%s", str);
 }
